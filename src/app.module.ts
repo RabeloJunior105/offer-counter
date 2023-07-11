@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './app/auth/auth.module';
 import { CurrencyModule } from './app/currency/currency.module';
 import { join } from 'path';
+import { UsersModule } from './app/users/users.module';
 
 @Module({
   imports: [
@@ -27,7 +28,8 @@ import { join } from 'path';
 
     }),
     AuthModule,
-    CurrencyModule
+    CurrencyModule,
+    UsersModule
   ],
   controllers: [AppController],
   providers: [AppService],
