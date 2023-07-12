@@ -2,38 +2,32 @@ import { Knex } from "knex";
 
 export async function seed(knex: Knex): Promise<void> {
     // Deletes ALL existing entries
-    await knex("currency").del();
+    await knex("wallet").del();
 
     // Inserts seed entries
-    await knex("currency").insert([
+    await knex("wallet").insert([
         {
             id: 1,
-            name: "Bitcoin",
+            name: "Carteira 01",
+            user_id: 1,
             createdAt: "2023-07-11 14:37:02"
         },
         {
             id: 2,
-            name: "Ethereum",
+            name: "Carteira 02",
+            user_id: 1,
             createdAt: "2023-07-11 14:37:02"
         },
         {
             id: 3,
-            name: "Tether",
+            name: "Carteira 01",
+            user_id: 2,
             createdAt: "2023-07-11 14:37:02"
         },
         {
             id: 4,
-            name: "BNB",
-            createdAt: "2023-07-11 14:37:02"
-        },
-        {
-            id: 5,
-            name: "Dogecoin",
-            createdAt: "2023-07-11 14:37:02"
-        },
-        {
-            id: 6,
-            name: "Cardano",
+            name: "Carteira 02",
+            user_id: 2,
             createdAt: "2023-07-11 14:37:02"
         }
     ]);

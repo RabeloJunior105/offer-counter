@@ -7,6 +7,8 @@ import { AuthModule } from './app/auth/auth.module';
 import { CurrencyModule } from './app/currency/currency.module';
 import { join } from 'path';
 import { UsersModule } from './app/users/users.module';
+import { WalletModule } from './app/wallet/wallet.module';
+import { WalletMovementModule } from './app/wallet-movement/wallet-movement.module';
 
 @Module({
   imports: [
@@ -29,7 +31,9 @@ import { UsersModule } from './app/users/users.module';
     }),
     AuthModule,
     CurrencyModule,
-    UsersModule
+    UsersModule,
+    WalletModule,
+    WalletMovementModule
   ],
   controllers: [AppController],
   providers: [AppService],
