@@ -6,7 +6,7 @@ export class UsersEntity {
     @PrimaryGeneratedColumn('increment')
     id: string
     @Column()
-    name: string
+    name: String
     @OneToMany(type => WalletEntity, wallet => wallet.user)
     wallet: WalletEntity
     @CreateDateColumn()
