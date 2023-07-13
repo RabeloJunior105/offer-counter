@@ -8,7 +8,7 @@ export class WalletMovementController {
 
     @UseGuards(ApiKeyAuthGuard)
     @Get('balance')
-    async findBalance(@Query() { currency_id, wallet_id }) {
-        return await this.WalletMovementService.findBalance(wallet_id, currency_id);
+    async findBalance(@Query() { wallet_id, curency_id }) {
+        return await this.WalletMovementService.findWalletBalance(wallet_id, curency_id);
     }
 }
