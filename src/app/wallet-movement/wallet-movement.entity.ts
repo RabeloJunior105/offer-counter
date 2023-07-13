@@ -7,9 +7,9 @@ export class WalletMovementEntity {
     @PrimaryGeneratedColumn('increment')
     id: string
     @Column()
-    debit: number
+    withdraw: number
     @Column()
-    credit: number
+    deposit: number
     @ManyToOne(type => CurrencyEntity, currency => currency.walletMovement)
     @JoinColumn({ name: "currency_id" })
     currency: WalletMovementEntity[]
