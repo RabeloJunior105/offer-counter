@@ -11,7 +11,12 @@ Iniciar o banco de dados
 ```sh
 docker-compose up --detach
 ```
-
+Adicionar o arquivo .env (Default "postgres")
+```sh
+DATABASE_USER
+DATABASE_PASSWORD
+DATABASE_NAME
+```
 Popular o banco de dados
 ```sh
 npx knex seed:run
