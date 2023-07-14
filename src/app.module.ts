@@ -3,7 +3,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { AuthModule } from './app/auth/auth.module';
 import { CurrencyModule } from './app/currency/currency.module';
 import { join } from 'path';
 import { UsersModule } from './app/users/users.module';
@@ -31,7 +30,6 @@ import { SharedModule } from './shared/shared.module';
       synchronize: true,
 
     }),
-    AuthModule,
     CurrencyModule,
     UsersModule,
     WalletModule,
