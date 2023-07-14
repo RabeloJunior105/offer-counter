@@ -60,3 +60,5 @@ http:localhost:3000/offer-counter?user_id=1&id=6
 + Melhorar nomenclatura das variaveis ultilizadas, algumas variaveis que ultilizei talvez não se encaixasse tanto no contexto do projeto.
 + Melhorar o sistema de seeds, como não era algo realmente relacionado ao projeto não dei tanta atenção, porem o sistema de seeds esta com um bug de rodar as seeds que ja foram inseridas no DB
 + Conteinerizar o projeto com o docker para facilitar e melhorar a gerencia da infraestrutura 
++ Melhorar os commits (Fazer commit separados de cada modulo ou de uma função criada)
++ Melhorar Branchs (Melhorar nomenclatura das branchs, e commits dentre elas)
