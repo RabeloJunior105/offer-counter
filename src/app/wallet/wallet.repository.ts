@@ -23,10 +23,11 @@ export class WalletRepository {
         }
     }
 
-    async findByUser(user_id: string) {
+    async findByUser(id: string, user_id: string) {
         try {
-            const findId = await this.Wallet.find({
+            const findId = await this.Wallet.findOne({
                 where: {
+                    id,
                     user: {
                         id: user_id
                     }

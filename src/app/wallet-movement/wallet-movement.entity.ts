@@ -13,7 +13,6 @@ export class WalletMovementEntity {
     @ManyToOne(type => CurrencyEntity, currency => currency.walletMovement)
     @JoinColumn({ name: "currency_id" })
     currency: WalletMovementEntity[]
-    
     @ManyToOne(type => WalletEntity, wallet => wallet.walletMovement)
     @JoinColumn({ name: "wallet_id" })
     wallet: WalletEntity[]

@@ -26,4 +26,8 @@ export class WalletMovementRepository {
         })
     }
 
+    async create(data) {
+        return await this.walletMovement.save(data)
+    }
+
 }
