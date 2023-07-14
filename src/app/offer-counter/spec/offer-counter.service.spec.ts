@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ApiKeyAuthGuard } from '../auth.guard';
+import { OfferCounterService } from '../offer-counter.service';
 
-describe('ApiKeyAuthGuardService', () => {
-  let service: ApiKeyAuthGuard;
+describe('OfferCounterService', () => {
+  let service: OfferCounterService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [ApiKeyAuthGuard],
+      providers: [OfferCounterService],
     }).compile();
 
-    service = module.get<ApiKeyAuthGuard>(ApiKeyAuthGuard);
+    service = module.get<OfferCounterService>(OfferCounterService);
   });
 
   it('should be defined', () => {

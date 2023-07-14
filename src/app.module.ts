@@ -3,12 +3,13 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { AuthModule } from './app/auth/auth.module';
 import { CurrencyModule } from './app/currency/currency.module';
 import { join } from 'path';
 import { UsersModule } from './app/users/users.module';
 import { WalletModule } from './app/wallet/wallet.module';
 import { WalletMovementModule } from './app/wallet-movement/wallet-movement.module';
+import { OfferCounterModule } from './app/offer-counter/offer-counter.module';
+import { SharedModule } from './shared/shared.module';
 
 @Module({
   imports: [
@@ -29,11 +30,12 @@ import { WalletMovementModule } from './app/wallet-movement/wallet-movement.modu
       synchronize: true,
 
     }),
-    AuthModule,
     CurrencyModule,
     UsersModule,
     WalletModule,
-    WalletMovementModule
+    WalletMovementModule,
+    OfferCounterModule,
+    SharedModule
   ],
   controllers: [AppController],
   providers: [AppService],
