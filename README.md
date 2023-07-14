@@ -51,3 +51,14 @@ BODY:
 [DELETE]
 http:localhost:3000/offer-counter?user_id=1&id=6
 ```
+
+
+## Pontos de melhoria
++ Criar os testes de cada serviço(unitario)
++ Criar os testes de cada controller (End To End) 
++ Criar um serviço de cache para buscar as movimentações do WalletMovement (Como sistema de movimentação são muitas linhas no BD a cada busca o banco juntamente com o algoritimo teria que passar por todas as linhas do banco de dados isso poderá ocorrer um grande gargalo quando o banco de dados estiver com muitos dados)
++ Melhorar nomenclatura das variaveis ultilizadas, algumas variaveis que ultilizei talvez não se encaixasse tanto no contexto do projeto.
++ Melhorar o sistema de seeds, como não era algo realmente relacionado ao projeto não dei tanta atenção, porem o sistema de seeds esta com um bug de rodar as seeds que ja foram inseridas no DB
++ Conteinerizar o projeto com o docker para facilitar e melhorar a gerencia da infraestrutura 
++ Melhorar os commits (Fazer commit separados de cada modulo ou de uma função criada)
++ Melhorar Branchs (Melhorar nomenclatura das branchs, e commits dentre elas)
