@@ -9,33 +9,33 @@ export async function seed(knex: Knex): Promise<void> {
         {
             id: 1,
             withdraw: 0.00,
-            deposit: 15000.00,
+            deposit: 50000.00,
             currency_id: 1,
             wallet_id: 1,
             createdAt: "2023-07-11 14:37:02"
         },
         {
-            id: 2,
-            withdraw: 1660.00,
-            deposit: 0.00,
-            currency_id: 1,
-            wallet_id: 1,
-            createdAt: "2023-07-11 14:37:02"
-        },
-        {
-            id: 3,
+            id: 1,
             withdraw: 0.00,
-            deposit: 2000.00,
+            deposit: 50000.00,
             currency_id: 1,
-            wallet_id: 1,
+            wallet_id: 2,
             createdAt: "2023-07-11 14:37:02"
         },
         {
             id: 4,
             withdraw: 0.00,
-            deposit: 20000.00,
+            deposit: 50000.00,
             currency_id: 2,
             wallet_id: 3,
+            createdAt: "2023-07-11 14:37:02"
+        },
+        {
+            id: 4,
+            withdraw: 0.00,
+            deposit: 50000.00,
+            currency_id: 2,
+            wallet_id: 4,
             createdAt: "2023-07-11 14:37:02"
         },
     ]);
